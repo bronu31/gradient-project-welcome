@@ -9,6 +9,6 @@ CMD mvn pom.xml clean package
 # Package stage
 #
 
-COPY out/artifacts/colors_jar/*.jar /colors.jar
+COPY target/*.jar /colors-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/colors.jar"]

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class BasicController {
 
     @GetMapping(value = {"","/"})
-    public String welcomePage(){return "/welcome";}
+    public String welcomePage(){return "welcome";}
 
 
 }
